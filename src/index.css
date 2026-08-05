@@ -26,4 +26,9 @@
     color: var(--color-forground);
     font-family: "Raleway", sans-serif;
   }
+
+  .font-serif{
+    font-family: "Roboto Condensed", serif;
+  }
 }
+
