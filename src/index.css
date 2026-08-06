@@ -24,11 +24,11 @@
   body{
     background-color: var(--color-background);
     color: var(--color-forground);
-    font-family: "Raleway", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .font-serif{
-    font-family: "Roboto Condensed", serif;
+    font-family: "Playfair Display", serif;
   }
 }
 
