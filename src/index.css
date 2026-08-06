@@ -2,7 +2,7 @@
 
 :root {
   --color-background: #0a0a0a;
-  --color-forground: #F5F5F5;
+  --color-foreground: #F5F5F5;
   --color-lightText: #888888;
   --color-border: #374151;
 
@@ -23,7 +23,7 @@
 
   body{
     background-color: var(--color-background);
-    color: var(--color-forground);
+    color: var(--color-foreground);
     font-family: "Inter", sans-serif;
   }
 
