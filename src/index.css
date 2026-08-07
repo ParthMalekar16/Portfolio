@@ -30,5 +30,13 @@
   .font-serif{
     font-family: "Playfair Display", serif;
   }
+
+  @layer components{
+    .glass{
+      background-color: color-mix(in srgb, var(--color-slit2) 50%, transparent);
+      backdrop-filter: blur(16px);
+      border: color-mix(in srgb, var(--color-slit1) 50%, transparent);
+    }
+  }
 }
 
