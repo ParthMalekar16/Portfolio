@@ -3,8 +3,11 @@
 :root {
   --color-background: #0a0a0a;
   --color-foreground: #F5F5F5;
-  --color-lightText: #888888;
+  --color-lightText: #d9d7d7;
   --color-border: #374151;
+
+  --color-primary: #051e63;
+  --color-primary-foreground: #14a2e9;
 
   --color-slit1: #8AB4F8;
   --color-slit2: #81C995;
@@ -33,9 +36,15 @@
 
   @layer components{
     .glass{
-      background-color: color-mix(in srgb, var(--color-slit2) 50%, transparent);
+      background-color: color-mix(in srgb, var(--color-gray-500) 50%, transparent);
       backdrop-filter: blur(16px);
       border: color-mix(in srgb, var(--color-slit1) 50%, transparent);
+    }
+
+    .glass-strong{
+      background-color: color-mix(in srgb, var(--color-gray-500) 80%, transparent);
+      backdrop-filter: blur(16px);
+      border: color-mix(in srgb, var(--color-slit1) 60%, transparent);
     }
   }
 }
