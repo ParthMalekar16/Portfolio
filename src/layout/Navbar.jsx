@@ -36,13 +36,15 @@ export const Navbar = () => {
         {/*Mobile menu button*/}
         <button className="md:hidden p-2 text-(--color-foreground) cursor-pointer"
         onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
-        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <span key={isMobileMenuOpen ? "close" : "menu"} className="block animate-fade-in">
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </span>
         </button>
       </nav>
 
       {/*Mobile Menu*/}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong">
+        <div className="md:hidden glass-strong animate-menu-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navlinks.map((link, index) => (
               <a href={link.href} key={index} className="text-lg text-(--color-lightText) hover:text-white py-2">
