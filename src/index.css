@@ -76,11 +76,25 @@
     }
   }
 
+  @keyframes cursor-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
   .animate-fade-in{
     animation: fade-in 200ms ease-out both;
   }
 
   .animate-menu-fade-in{
     animation: menu-fade-in 250ms ease-out both;
+  }
+
+  .animate-cursor-pulse{
+    animation: cursor-pulse 900ms ease-in-out infinite;
   }
 }
